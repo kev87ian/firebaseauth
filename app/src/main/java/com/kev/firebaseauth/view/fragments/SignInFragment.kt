@@ -43,8 +43,6 @@ class SignInFragment : Fragment(R.layout.fragment_sign_in) {
 
 		setUpObserver()
 
-
-
 		super.onViewCreated(view, savedInstanceState)
 	}
 
@@ -53,8 +51,9 @@ class SignInFragment : Fragment(R.layout.fragment_sign_in) {
 		viewModel.loginLiveData.observe(viewLifecycleOwner) {resource->
 			when(resource){
 				is Resource.Failure ->{
-					binding.progressBarSignin.visibility = View.GONE
 					Toast.makeText(requireContext(), resource.errorMessage, Toast.LENGTH_SHORT).show()
+					binding.progressBarSignin.visibility = View.GONE
+
 				}
 				is Resource.Loading->{
 					binding.progressBarSignin.visibility = View.VISIBLE
@@ -83,9 +82,9 @@ class SignInFragment : Fragment(R.layout.fragment_sign_in) {
 
 
 		if (email.isNotEmpty() && password.isNotEmpty() && !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-			Toast.makeText(requireContext(), "Ensure the email is correct", Toast.LENGTH_SHORT)
-				.show()
+			Toast.makeText(requireContext(), "Ensure the email is correct", Toast.LENGTH_SHORT).show()
 		} else {
+
 			viewModel.loginUser(email, password)
 		}
 

@@ -30,5 +30,16 @@
         <action
             android:id="@+id/action_signUpFragment_to_signInFragment"
             app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.kev.firebaseauth.view.fragments.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
 </navigation>

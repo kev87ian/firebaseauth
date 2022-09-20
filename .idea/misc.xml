@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/drawable/ic_password.xml" value="0.2725" />
         <entry key="app/src/main/res/drawable/ic_person_grey.xml" value="0.2055" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.37916666666666665" />
+        <entry key="app/src/main/res/layout/activity_second.xml" value="0.2456081081081081" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.24594594594594596" />
         <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.3651041666666667" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.24594594594594596" />
